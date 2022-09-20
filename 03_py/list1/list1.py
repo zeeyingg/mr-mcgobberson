@@ -12,11 +12,11 @@ print("...should be False")
 print(first_last6([13, 6, 1, 2, 3]))
 print("...should be False")
 
+
 '''
 Given an array of ints, return True if the array is length 1 or more, and
 the first element and the last element are equal.
 '''
-
 
 def same_first_last(nums):
   return (len(nums) >= 1 and nums[0] == nums[len(nums)-1])
@@ -28,6 +28,7 @@ print(same_first_last([1,2,3, 1]))
 print("...should be True")
 print(same_first_last([1,2,1]))
 print("...should be True")
+
 
 '''
 Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}.
@@ -75,6 +76,7 @@ print("...should be 18")
 print(sum3([7, 0, 0]))
 print("...should be 7")
 
+
 '''
 Given an array of ints length 3, return an array with the elements "rotated
 left" so {1, 2, 3} yields {2, 3, 1}.
@@ -90,7 +92,6 @@ print("...should be [2,3,1]")
 print(rotate_left3([5, 11, 9]))
 print("...should be [11,9,5]")
 print(rotate_left3([7, 0, 0]))
-
 
 
 '''
