@@ -26,3 +26,38 @@ def last2(str):
     if (str[index:index+2] == last):
       count+=1
   return count
+
+def array_count9(nums):
+  count = 0
+  for i in nums:
+    if (i == 9):
+      count+=1
+  return count
+
+def array_front9(nums):
+  end = len(nums)
+  if end > 4:
+    end = 4
+
+  for i in range(end):
+    if nums[i] == 9:
+      return True
+  return False
+
+def array123(nums):
+  end = len(nums)-2
+
+  for i in range(end):
+    if (nums[i] == 1 and nums[i+1] == 2 and nums[i+2] == 3):
+      return True
+  return False
+
+  def string_match(a, b):
+  count = 0
+  end = len(a)-1
+
+  for i in range(end):
+    if (a[i:i+2] == b[i:i+2]): # a1:b1 denotes a splicing of strings (exclusive of the last value)
+      count+=1
+
+  return count
