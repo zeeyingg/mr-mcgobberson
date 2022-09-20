@@ -1,0 +1,51 @@
+def first_last6(nums):
+  return (nums[0] == 6 or nums[len(nums)-1] == 6)
+
+def same_first_last(nums):
+  return (len(nums) >= 1 and nums[0] == nums[len(nums)-1])
+
+def make_pi():
+  pi = [3,1,4]
+  return (pi)
+
+def common_end(a, b):
+  return (a[0] == b[0] or a[len(a)-1] == b[len(b)-1])
+
+def sum3(nums):
+  return nums[0] + nums[1] + nums[2]
+
+def rotate_left3(nums):
+  new = [nums[1],nums[2],nums[0]]
+  return new
+
+def reverse3(nums):
+  new = [nums[2],nums[1],nums[0]]
+  return new
+
+def max_end3(nums):
+  maxthing = max(nums[0],nums[2])
+  new = [maxthing,maxthing,maxthing]
+  return new
+
+def sum2(nums):
+  if len(nums) == 0:
+    return 0
+  elif len(nums) == 1:
+    return nums[0]
+  return nums[0] + nums[1]
+
+def middle_way(a, b):
+  middle = [a[1],b[1]]
+  return middle
+  
+def make_ends(nums):
+  frist = [nums[0],nums[len(nums)-1]]
+  return frist
+
+def has23(nums):
+  for i in nums:
+    if i == 2 or i == 3:
+      return True
+  return False
+
+
