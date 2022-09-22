@@ -11,9 +11,11 @@ DISCO:
 * To import a statement, use from... import...
 * randint() is an imported function to generate a random integer
 * The conditions for randint() are both inclusive
+* Rand
 
 QCC:
 * How do we get the full names of all thinkerens in all periods?
+* Why is our current code not working?
 
 OPS SUMMARY:
 '''
@@ -29,6 +31,5 @@ def selectDevo():
 
     randomDevo = randint(0,len(devoList))
     return devoList[randomDevo]
-    # return krewes[randomCrew:randomDevo]
 
 print(selectDevo())
