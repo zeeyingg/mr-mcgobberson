@@ -13,3 +13,10 @@ QCC:
 
 HOW THIS SCRIPT WORKS:
 '''
+
+import random
+
+info = open("occupations.csv", "r")
+fullText = info.read()
+fullText = fullText[21:-1]
+print(fullText)
