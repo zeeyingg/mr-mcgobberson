@@ -3,7 +3,7 @@ ZEMZEM is AWZOME Ziying Jian, Maya Nelson, Elizabeth Paperno
 SoftDev
 K07 -- Flask
 2022-10-03
-time spent:
+time spent: 0.5 hrs
 '''
 
 from flask import Flask
