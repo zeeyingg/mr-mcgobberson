@@ -1,3 +1,10 @@
+'''
+ZIMZIM(mermann Telegram) Ziying Jian, Maya Nelson, Ivan Yeung
+SoftDev
+K08 -- Flask
+2022-10-04
+time spent:
+'''
 
 import random
 
@@ -20,4 +27,16 @@ with open('occupations.csv','r') as file:
         count+=1
     
         
-print(random.choices(jobs, weights = weight)) #random.choices takes weight into account for each value
+#print(random.choices(jobs, weights = weight)) #random.choices takes weight into account for each value
+    
+from flask import Flask
+app = Flask(__name__) #create instance of class Flask
+
+@app.route("/")       #assign fxn to route
+def hello_world():
+    print(__name__)
+    return "Selected occupation: " + random.choices(jobs, weights = weight)[0] #Prints the only element in the list
+
+if __name__ == "__main__":  # true if this file NOT imported
+    app.debug = True        # enable auto-reload upon code change
+    app.run()

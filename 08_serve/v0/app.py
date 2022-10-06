@@ -23,6 +23,7 @@ In the terminal, we received this: Serving Flask app 'foo'
 
 PREDICTIONS:
 * The name of the Flask application is printed in the terminal.
+* Our prediction was correct.
 
 QCC:
 * How is hello_world() being run using run()? Does run() run all the functions in the file?
