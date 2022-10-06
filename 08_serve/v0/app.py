@@ -1,5 +1,5 @@
 '''
-ZIMZIM(mermann Telegram) Ziying Jian, Maya Nelson, Ivan Yueng
+ZIMZIM(mermann Telegram) Ziying Jian, Maya Nelson, Ivan Yeung
 SoftDev
 K08 -- Flask
 2022-10-04
@@ -7,7 +7,7 @@ time spent:
 '''
 
 from flask import Flask
-app = Flask('foo') #Creates a Flask application called __name__
+app = Flask(__name__) #Creates a Flask application called __name__
 
 @app.route("/") #This is a route
 def hello_world():
@@ -17,9 +17,12 @@ def hello_world():
 app.run()  #run() runs the function
 
 '''
-DISCO:
+NOTABLES:
 * When we replaced __name__ with 'foo', we didn't receive an error and the "No hablo queso" was still printed!
 In the terminal, we received this: Serving Flask app 'foo'
+
+PREDICTIONS:
+* The name of the Flask application is printed in the terminal.
 
 QCC:
 * How is hello_world() being run using run()? Does run() run all the functions in the file?

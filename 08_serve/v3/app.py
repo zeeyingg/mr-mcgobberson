@@ -1,6 +1,10 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2022
+'''
+ZIMZIM(mermann Telegram) Ziying Jian, Maya Nelson, Ivan Yeung
+SoftDev
+K08 -- Flask
+2022-10-04
+time spent:
+'''
 
 from flask import Flask
 app = Flask(__name__) #create instance of class Flask
@@ -13,3 +17,20 @@ def hello_world():
 
 app.debug = True
 app.run()
+
+'''
+NOTABLES:
+* Line 18 is newly added and NOTABLE
+
+PREDICTIONS:
+* We predict that in the terminal, the debug mode will be set to ON.
+
+Our predictions were right, but we also got some other information from the terminal.
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 441-963-763
+
+QCC:
+* What is app.debug? What does setting it True do?
+* What is the Debugger PIN?
+'''
