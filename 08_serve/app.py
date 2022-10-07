@@ -2,8 +2,20 @@
 ZIMZIM(mermann Telegram) Ziying Jian, Maya Nelson, Ivan Yeung
 SoftDev
 K08 -- Flask
-2022-10-04
-time spent:
+2022-10-06
+time spent: 1 hr
+'''
+
+'''
+DISCOS:
+- In order to have information displayed on a webpage, use HTML markers wrapped in Strings. 
+For instance, we figured out that in order to create a line break, you must used "<br>", not "\n"
+- In a module, there must only be one return statement culminating all the information to be displayed on the webpage.
+
+QCC:
+- What does debug do?
+- Why doesn't the page display the result of multiple functions? 
+- Is printing the __name__ necessary?
 '''
 
 import random
@@ -33,9 +45,14 @@ from flask import Flask
 app = Flask(__name__) #create instance of class Flask
 
 @app.route("/")       #assign fxn to route
+
 def hello_world():
     print(__name__)
-    return "Selected occupation: " + random.choices(jobs, weights = weight)[0] #Prints the only element in the list
+    teamName = "ZIMZIM(mermann Telegram): Ziying Jian, Maya Nelson, Ivan Yeung" + "<br>"
+    selectedOccup = "<br>" +"Selected occupation: " + random.choices(jobs, weights = weight)[0] + "<br>"
+     #Prints the only element in the list
+    listJobs = "<br>" + "List of jobs: " + str(jobs) 
+    return teamName + selectedOccup + listJobs
 
 if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
