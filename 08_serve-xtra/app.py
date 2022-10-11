@@ -48,9 +48,9 @@ app = Flask(__name__) #create instance of class Flask
 
 def hello_world():
     print(__name__)
-    teamName = "<h1>" + "ZIMZIM(mermann Telegram): Ziying Jian, Ivan Yeung, Maya Nelson" + "</h1>" + "<br>"
+    teamName = "<h3>" + "ZIMZIM(mermann Telegram): Ziying Jian, Ivan Yeung, Maya Nelson" + "</h3>" + "<br>"
     print("teamName printed")
-    selectedOccup = "<br>" +"Selected occupation: " + random.choices(jobs, weights = weight)[0] + "<br>"
+    selectedOccup = "Selected occupation: " + random.choices(jobs, weights = weight)[0] 
      #Prints the only element in the list
     print("selectedOccup printed")
     listJobs = "<br>" + "List of jobs: " + str(jobs) 
