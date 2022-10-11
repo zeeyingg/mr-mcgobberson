@@ -1,6 +1,10 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2022
+'''
+ZIMZIM(mermann Telegram) Ziying Jian, Maya Nelson, Ivan Yeung
+SoftDev
+K09 -- Some Things Never Change
+2022-10-011
+time spent: 0.5 hr
+'''
 
 # DEMO 
 # basics of /static folder
