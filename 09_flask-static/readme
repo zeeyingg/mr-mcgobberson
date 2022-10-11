@@ -1,0 +1,22 @@
+ZIMZIM: Ziying Jian, Ivan Yeung, Maya Nelson
+SoftDev
+K09 -- Some Things Never Change
+time spent:
+
+
+OUR PREDICTIONS:
+- We think accessing both links will bring you to the plaintext files.
+
+What ACTUALLY happens once you access the link...
+
+- The foo file gives you the option to download (on Vivaldi) or automaticlaly downloads the file once accessed (on Firefox)
+- foo.html brings you to a webpage with text generated on it 
+
+NOTES:
+- It is NOT plaintext because there are html markers surrounding the text
+- foo is the only file with plaintext -- the contents can only be accessed through opening the file on a local machine
+- The local server can display a file in different ways
+- Links cannot be accessed if you do not run app.py and a local host server is not set up
+- Is there a way to return the link in the terminal?
+
+
