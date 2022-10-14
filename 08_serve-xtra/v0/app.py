@@ -3,7 +3,7 @@ ZIMZIM(mermann Telegram) Ziying Jian, Maya Nelson, Ivan Yeung
 SoftDev
 K08 -- Flask
 2022-10-04
-time spent: 0.5 hrs
+time spent:
 '''
 
 from flask import Flask

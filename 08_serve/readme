@@ -1,0 +1,14 @@
+ZIMZIM(mermann Telegram) Ziying Jian, Maya Nelson, Ivan Yeung
+SoftDev
+
+DISCOS:
+- In order to have information displayed on a webpage, use HTML markers wrapped in Strings. 
+For instance, we figured out that in order to create a line break, you must used "<br>", not "\n"
+- In a module, there must only be one return statement culminating all the information to be displayed on the webpage.
+
+QCC:
+- What is app.debug? What does setting it True do?
+- What is the Debugger PIN?
+- What is a module? Why is it important in Flask?
+- Why doesn't the page display the result of multiple functions? 
+- Is printing the __name__ necessary?
