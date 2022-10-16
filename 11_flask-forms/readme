@@ -1,23 +1,22 @@
 PREDICTIONS
-* return render_template('login.html') will run and display the HTML file in the webserver 
+* return render_template('login.html') will run and display the HTML file in the web browser
 * print statements are just diagnostic tests to show users what's going on behind the scenes
-* We think when the form is submitted, the webserver will display "Waaaa hoooo HAAH"
+* We think when the form is submitted, the web browser will display "Waaaa hoooo HAAH"
 * We're unsure of what will be printed in the terminal
 * After the form has been submitted, the site will move to a different page using "/auth"
 
 DISCO
 * Line 34 in login.html brings you to the webpage with "/auth" appended to the address
-When we changed "/auth"
-* Flask was built around HTML standards 
+When we changed "/auth,"
+* Flask was built around HTML standards
 * Automatic, default value for buttons are "Submit query"
 * When a value is submitted into the form, flask automatically puts the value into a dictionary as part of a key-value
+* If the import statement in line 6 in app.py is removed, it causes a 500 internal server error that indicates the server
+encountered a problem that prevented it from fulfilling the request -- a general catch-all error statement
 
 QCC
 * What is jinja?
 * What are requests, request args and request headers?
 * What does app.route exactly do regarding file access? Why do we still need it?
-
-FUTURE TASKS:
-* get requests - add a question mark at the end of the address bar with key:value pairs at the end
-* whenever you make a search, you're using get requests (i.e. Amazon search, called query search)
-* uncomment get lines and see what happens
+* From DZJ: I'm still struggling to get these files to run on my home machine and installing flask in my virtual environment.
+How would I go about fixing this?
