@@ -6,45 +6,133 @@
 <link rel="stylesheet" type = "text/css" href="mimic.css"> <!-- LINKS CSS SHEET -->
 
 <style>
-.internal{
-    background-color: cadetblue;
+body {
+  background-color: #666666;
 }
-
-h1{
-
+.internal {
+  font-family: sans-serif, Arial;
+  background-color: #767676;
+}
+.internal > h1{
+    background-color: #bebebe;
+    color: white;
+    text-align: center;
+    padding:5px;
+}
+.internal > #hor {
+  display: flex;
+  flex-direction: row;
+}
+.internal > #hor > div > ul {
+  list-style: none;
+}
+.internal > #hor > div > ul > li {
+  color: #dcdcdc;
+  font-weight: bold;
+}
+.internal > div > #navbar{
+  margin-right: 300px;
+}
+.internal > #copyright {
+  text-align: right;
+  background-color: #565656;
+  color: #76736a;
+  padding: 7px;
 }
 </style>
 
 <script src=""></script>
 <body>
 
-<div class="inline">
-    <h1>STYLING WITH INLINE STYLING</h1>
-    <h3> This website was made us</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+  <div class="internal">
+    <h1>STYLING WITH INTERNAL STYLE SHEET</h1>
+      <!-- navbar div -->
+      <div id = "hor">
+        <div id = "navbar">
+          <ul>
+            <h3>BLUE</h3>
+            <li>talia</li>
+            <li>ziying</li>
+            <li>jasmine</li>
+          </ul>
+        </div>
+        <!-- main foo heading and paragraph div -->
+        <div id = "paragraphs">
+          <h2> This website was made us</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Consectetur purus ut faucibus pulvinar elementum
+            integer. Eget felis eget nunc lobortis. Aliquam malesuada
+            bibendum arcu vitae elementum curabitur vitae nunc. Ut tellus
+            elementum sagittis vitae et leo. Sed viverra tellus in hac
+            habitasse platea dictumst. Gravida in fermentum et sollicitudin
+            ac orci. Id cursus metus aliquam eleifend mi in. Ac auctor augue
+            mauris augue neque gravida. In dictum non consectetur a erat
+            nam at lectus urna. Lectus proin nibh nisl condimentum id.
+            Dui id ornare arcu odio. Arcu felis bibendum ut tristique et
+            egestas quis ipsum. Sed viverra tellus in hac habitasse platea.
+
+            Mattis enim ut tellus elementum sagittis vitae et leo duis. Montes
+            nascetur ridiculus mus mauris. Sed pulvinar proin gravida hendrerit
+            lectus. Ipsum dolor sit amet consectetur adipiscing. Felis donec et
+            odio pellentesque. Pretium quam vulputate dignissim suspendisse
+            in est ante in. Sem nulla pharetra diam sit amet nisl suscipit.
+          </p>
+        </div>
+      </div>
+      <!-- copyright -->
+      <p id = "copyright">
+        Copyright of Blue Haired Girls with Pronouns
+      </p>
     </div>
 
-<div class="internal">
- <h1>STYLING WITH INTERNAL SHEETS</h1>
+<div class="inline">
+ <h1>STYLING WITH INLINE STYLING</h1>
  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
 </div>
 
 <div class="sheet">
-    <h1>STYLING WITH CSS SHEET</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-       exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-       irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
-   </div>
+  <h1>STYLING WITH EXTERNAL STYLE SHEET</h1>
+    <!-- navbar div -->
+    <div id = "hor">
+      <div id = "navbar">
+        <ul>
+          <h3>BLUE</h3>
+          <li>talia</li>
+          <li>ziying</li>
+          <li>jasmine</li>
+        </ul>
+      </div>
+      <!-- main foo heading and paragraph div -->
+      <div id = "paragraphs">
+        <h2> This website was made us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Consectetur purus ut faucibus pulvinar elementum
+          integer. Eget felis eget nunc lobortis. Aliquam malesuada
+          bibendum arcu vitae elementum curabitur vitae nunc. Ut tellus
+          elementum sagittis vitae et leo. Sed viverra tellus in hac
+          habitasse platea dictumst. Gravida in fermentum et sollicitudin
+          ac orci. Id cursus metus aliquam eleifend mi in. Ac auctor augue
+          mauris augue neque gravida. In dictum non consectetur a erat
+          nam at lectus urna. Lectus proin nibh nisl condimentum id.
+          Dui id ornare arcu odio. Arcu felis bibendum ut tristique et
+          egestas quis ipsum. Sed viverra tellus in hac habitasse platea.
+
+          Mattis enim ut tellus elementum sagittis vitae et leo duis. Montes
+          nascetur ridiculus mus mauris. Sed pulvinar proin gravida hendrerit
+          lectus. Ipsum dolor sit amet consectetur adipiscing. Felis donec et
+          odio pellentesque. Pretium quam vulputate dignissim suspendisse
+          in est ante in. Sem nulla pharetra diam sit amet nisl suscipit.
+        </p>
+      </div>
+</div>
 
 </body>
-</html> 
+</html>

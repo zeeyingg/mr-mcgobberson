@@ -18,5 +18,6 @@ QCC
 * What is jinja?
 * What are requests, request args and request headers?
 * What does app.route exactly do regarding file access? Why do we still need it?
+* When we tried running this file from our home computer while ssh'ed into the school computer, the web browser did not generate anything on the page. Why is this happening?
 * From DZJ: I'm still struggling to get these files to run on my home machine and installing flask in my virtual environment.
 How would I go about fixing this?

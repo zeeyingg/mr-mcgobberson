@@ -1,0 +1,30 @@
+.sheet {
+  font-family: sans-serif, Arial;
+  background-color: #767676;
+}
+.sheet > h1{
+    background-color: #bebebe;
+    color: white;
+    text-align: center;
+    padding:5px;
+}
+.sheet > #hor {
+  display: flex;
+  flex-direction: row;
+}
+.sheet > #hor > div > ul {
+  list-style: none;
+}
+.sheet > #hor > div > ul > li {
+  color: #dcdcdc;
+  font-weight: bold;
+}
+.sheet > div > #navbar{
+  margin-right: 300px;
+}
+.sheet > #copyright {
+  text-align: right;
+  background-color: #565656;
+  color: #76736a;
+  padding: 7px;
+}

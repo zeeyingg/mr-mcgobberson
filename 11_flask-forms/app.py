@@ -16,7 +16,7 @@ app = Flask(__name__)    #create Flask object
 trioTASK:
 ~~~~~~~~~~~ BEFORE RUNNING THIS, ~~~~~~~~~~~~~~~~~~
 ...read for understanding all of the code below.
-Some will work as written; other sections will not.
+Some will work as written; other sections will not. 
 TASK: Predict which...
 Devise some simple tests you can run to "take apart this engine," as it were.
 Execute your tests.
@@ -53,15 +53,15 @@ def authenticate():
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    print("***DIAG: request.args['username']  ***")
-    print(request.args['username'])
+    print("***DIAG: request.args['username']  ***") # previously commented
+    print(request.args['username']) # previously commented
     print("***DIAG: request.headers ***")
     print(request.headers)
     return "Waaaa hooo HAAAH"  #response to a form submission
 
 
-
+    
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True
+    app.debug = True 
     app.run()
