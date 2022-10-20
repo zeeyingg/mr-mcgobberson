@@ -1,14 +1,18 @@
-# how-to :: DO THE THING
+# how-to :: CSS FLEXBOX CONTAINERS
 ---
 ## Overview
-Why we care, what this will allow us to do, etc...
+Flexboxes are very helpful when it comes to formatting a page since it allows for elements to be adjusted and live inside a container.
 
 ### Estimated Time Cost: x.x hrs (round to nearest 0.1)
 
 ### Prerequisites:
+- Know HTML basic syntax
+- Creating <div> classes
+- Creating and linking CSS style sheet 
+- Only supported in Chrome, Edge, Firefox, Safari, and Opera
 
-- Something you should know beforehand...
-- Something you will need installed beforehand...
+
+
 
 1. Step blah blah blah, and/or...
 1. Step, with `inline code`, and/or...
