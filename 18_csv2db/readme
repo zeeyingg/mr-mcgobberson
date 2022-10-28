@@ -1,0 +1,19 @@
+BLUE HAIRED GIRLS :: Ziying Jian, Talia Hsia, Jasmine Yuen
+K18 -- A Mare Widge Made in Hebben
+2022-10-27
+time spent: 1 hr 
+
+DISCO:
+- In our initial code, the f-string was formatted incorrectly,
+which is why it didn't work
+i.e.
+
+        original: 
+        new: row[{'code'}]
+- DictReader() reads contents and then maps the info onto key:value
+pairs AKA dictionary objects
+- .fetchall() returns all the selected rows
+
+QCC:
+- What other ways can we employ DictReader?
+- How do we format the output to actually look like a spreadsheet?
