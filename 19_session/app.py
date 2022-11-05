@@ -41,6 +41,7 @@ def login():
     #if login is authenticated
     if authenticate(request.args['username'], request.args['password']):
         return render_template('response.html', functional="WORKS!")
+    #if not
     return render_template('login.html', errorLogin = "Bad password or bad username.")
 
 #@app.route('/logout')
