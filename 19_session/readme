@@ -4,6 +4,29 @@ K19 - Flask app that uses session capabilites to allow user to login and logout
 2022-11-03
 time spent:
 
+HOW IT WORKS:
+- we have three app routes:
+
+1. / <- root directory
+
+IF LOGGED OUT:
+* renders login.html, which prompts for login information
+
+IF LOGGED IN:
+* renders reponse.html and displays the username in session
+
+2. /login
+- renders login.html
+- form to collect username and password
+- submit button
+- after login info is submitted, if user/pass are wrong, will display message at bottom reading "Bad username." or "Bad password."
+
+3. /response
+- renders reponse.html
+- displays our team name and roster
+- has a logout button
+- the logout button will send a form to the route /logout, which ends the session and displays the login page again
+
 DISCOS:
 * request.args gets data from a form using "GET" method
 * request.form gets data from a form using "POST" method
@@ -12,8 +35,9 @@ DISCOS:
 allowing it to be accessed across different pages
 * when a user is logged out, the session variable is removed
 * logout button created within a form in order to work
-* creating secret keys in order to restrict access of cookie data
+* adding in secret key variable
 
 QCCs:
 * What exactly does the app secret key do?
 * How does routing work?
+* establishing cookies within a session
