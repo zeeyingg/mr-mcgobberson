@@ -6,49 +6,51 @@ K19 - Flask app that uses session capabilites to allow user to login and logout
 time spent:
 """
 
-from flask import request, Flask, render_template, redirect
+from flask import Flask
+from flask import render_template
+from flask import request
 from flask import session
 
 app = Flask(__name__)
 
+#hard-coded login info
 username = "ziying"
 password = "john"
 
-#app.secret_key = '74f9cf8fcf367b3c88469c1e720934b2298c4108928e85d4f79703f763942bf3'
+app.secret_key = "23bd2dcea35c795e204d397157f3d55bf1afda7db6519a46f9d1e5a5f02ed45b"
 
 def authenticate(user, passw):
     return (user == username and passw == password)
 
 @app.route("/", methods=['GET', 'POST'])
-def index():
-    return render_template("index.html")
+def disp_loginpage():
+    if 'username' in session:
+        #if the user is already logged into the session
+        return render_template('response.html', functional="WORKS!", username=session['username'])
+    return render_template('login.html')
+
 
 @app.route("/login", methods=['GET', 'POST'])
-def disp_loginpage():
-    return render_template('login.html', errorLogin = "")
-
-#def login():
-#    return render_template( 'login.html', errorLogin = "" )
-#    # if form is submitted
-#    if request.method == "POST":
-        #record the username
-#        session['username'] = request.form.get('username')
-#        #redirect to the main PAGE
-#        return redirect("/")
-#    return render_template("login.html")
-
 def login():
-    #if login is authenticated
+    #authenticate login info from form using "request.args"
     if authenticate(request.args['username'], request.args['password']):
-        return render_template('response.html', functional="WORKS!")
-    #if not
-    return render_template('login.html', errorLogin = "Bad password or bad username.")
+        #establishes a session
+        session['username'] = request.args['username']
+        #bring to new page
+        return render_template('response.html', functional="WORKS!", username=session['username'])
+    #error messages
+    else:
+        if username != request.args['username']:
+            return render_template('login.html', loginMSG="Bad username.")
+        return render_template('login.html', loginMSG="Bad password.")
 
-#@app.route('/logout')
-#def logout():
-     # remove the username from the session if it's there
-#     session.pop('username', None)
-#     return redirect("/")
+
+@app.route('/logout')
+def logout():
+    # remove the username from the session if it's there
+    session.pop('username', None)
+    return render_template('login.html', loginMSG="Logged out")
+
 
 if __name__ == "__main__":
     app.debug = True

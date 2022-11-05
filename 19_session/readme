@@ -1,0 +1,17 @@
+Blue Haired Gals With Pronouns: Jasmine Yuen, Talia Hsia, Ziying Jian
+SoftDev
+K19 - Flask app that uses session capabilites to allow user to login and logout
+2022-11-03
+time spent:
+
+DISCOS:
+* request.args gets data from a form using "GET" method
+* request.form gets data from a form using "POST" method
+* a cookie contains a unique session ID and returned when the server is requested again
+* you can use session to temporarily store data as in the case of using session['username'],
+allowing it to be accessed across different pages
+* when a user is logged out, the session variable is removed
+
+QCCs:
+* What exactly does the app secret key do?
+* How does routing work?
