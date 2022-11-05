@@ -11,6 +11,8 @@ DISCOS:
 * you can use session to temporarily store data as in the case of using session['username'],
 allowing it to be accessed across different pages
 * when a user is logged out, the session variable is removed
+* logout button created within a form in order to work
+* creating secret keys in order to restrict access of cookie data
 
 QCCs:
 * What exactly does the app secret key do?
