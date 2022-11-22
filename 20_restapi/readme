@@ -4,7 +4,7 @@ K20 -- A RESTful Journey Skyward
 2022-11-22
 time spent: .7 hr
 
-DISCO 
+DISCO
 We used the following libraries to get our job done real easy.
   from urllib.request import urlopen
   import json
@@ -13,3 +13,4 @@ json files work like dictionaries
 
 QCC
 How is json different from a csv file?
+What is the purpose of keys for the API?
