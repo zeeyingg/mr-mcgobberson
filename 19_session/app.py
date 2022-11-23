@@ -11,6 +11,45 @@ from flask import render_template
 from flask import request
 from flask import session
 
+# SQLITE
+import sqlite3   #enable control of an sqlite database
+
+
+DB_FILE="database.db"
+
+db = sqlite3.connect(DB_FILE) #open if file exists, otherwise create
+c = db.cursor()               #facilitate db ops -- you will use cursor to trigger db events
+
+#Creates table and executes
+#db.execute("DROP TABLE if exists users")
+createUser = "CREATE TABLE if not exists users (username STRING, password STRING);"
+c.execute(createUser)
+
+#print("----COURSES TABLE----")
+
+#Fetch all rows from ONE data table
+# c.execute('SELECT * from courses;') #query
+# for i in c.fetchall(): #
+#     print(i) #Prints out each data 
+    
+# print("----STUDENTS TABLE----")
+
+# c.execute('SELECT * from students;') #query
+# for i in c.fetchall():
+#     print(i) #Prints out each data 
+
+# for i in range(len(students)):
+#     c.execute(f"INSERT INTO students VALUES (students['name'][{i}], students['age'][{i}], students['id'][{i}]);")
+
+# for i in range(len(courses)):
+#     c.execute(f"INSERT INTO students VALUES (courses['code'][{i}], courses['mark'][{i}], courses['id'][{i}]);")
+
+#==========================================================
+
+
+
+# FLASK
+
 app = Flask(__name__)
 
 #hard-coded login info
@@ -22,6 +61,13 @@ app.secret_key = "23bd2dcea35c795e204d397157f3d55bf1afda7db6519a46f9d1e5a5f02ed4
 def authenticate(user, passw):
     return (user == username and passw == password)
 
+def addUser(user, passw):
+    addUser = f"INSERT INTO users VALUES('{user}', '{passw}');"
+    c.execute(addUser)
+
+    db.commit() #save changes
+    db.close()  #close database
+
 @app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
     if 'username' in session:
@@ -30,7 +76,7 @@ def disp_loginpage():
     return render_template('login.html')
 
 
-@app.route("/login", methods=['GET', 'POST'])
+@app.route(, methods=['GET', 'POST'])
 def login():
     #authenticate login info from form using "request.args"
     if authenticate(request.args['username'], request.args['password']):
