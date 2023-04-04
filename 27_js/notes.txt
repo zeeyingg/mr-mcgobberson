@@ -12,7 +12,8 @@ DISCO
 
 QCC
 -----------------------------------------------------------------
-* 
+* Can JS only be run in the dev console?
+* What are the first three lines of the file used for?
 =================================================================
 
 
