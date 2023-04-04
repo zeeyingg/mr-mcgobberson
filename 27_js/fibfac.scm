@@ -6,8 +6,6 @@
 ;K27 -- Basic functions in JavaScript
 ;2023-04-03t
 
-;Scheme Antecedents for JS work
-
 ;factorial:
 (define
 fact (lambda (n)
