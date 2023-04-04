@@ -1,7 +1,7 @@
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
-// SoftDev pd0
+// Josh's Joltin' Giants
+// SoftDev pd08
 // K27 -- Basic functions in JavaScript
-// 2023-04-04t
+// 2023-04-03t
 // --------------------------------------------------
 
 
