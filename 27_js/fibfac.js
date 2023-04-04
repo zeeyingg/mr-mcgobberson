@@ -11,3 +11,20 @@
 
 
 //Do whatever you think is needed. Think: S I M P L E.   Think: S M A R T.
+
+
+function fact(a) {
+    if(a <= 1){
+        return 1
+    } else{
+        return fact(a - 1) * a
+    }
+}
+
+function fib(a){
+    if( a <= 1){
+        return a 
+    } else {
+        return (fib(a - 1) + fib(a - 2))
+    }
+ }

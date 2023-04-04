@@ -5,16 +5,16 @@ K27 -- Basic functions in JavaScript
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____
-* ...
+* No semicolons
+* Lambda is the function used to define a procedure in Scheme
+* js is run thru the dev console
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* Why...?
-* Huh?
-* Teh whah now?
+* Why.
+* Huh?????
+* Teh whah now??
 * ...
 =================================================================
 
