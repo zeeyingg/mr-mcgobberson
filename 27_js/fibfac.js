@@ -4,15 +4,6 @@
 // 2023-04-03t
 // --------------------------------------------------
 
-
-// as a duo...
-// pair programming style,
-// implement a fact and fib fxn
-
-
-//Do whatever you think is needed. Think: S I M P L E.   Think: S M A R T.
-
-
 function fact(a) {
     if(a <= 1){
         return 1
