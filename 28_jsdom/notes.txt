@@ -5,9 +5,9 @@ K28 -- Getting more comfortable with the dev console and the DOM
 
 DISCOs:
 * Using arrow syntax, the left part denotes the input of a function and the right part the output of the function.
-* Why is instating an object useful?
+* Even when the red class is added to all <li> element, items 1 to items 6 are still blue. 
 
 QCCs:
 * What is the difference between a "var" and a "cons" type?
-* Even when the red class is added to all <li> element, items 1 to items 6 are still blue. Why is that?
+* Why is instating an object useful?
 * What is the preferred syntax for writing JS? 
