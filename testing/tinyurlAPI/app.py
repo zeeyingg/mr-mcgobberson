@@ -1,7 +1,7 @@
 import json
 from flask import request
 
-input_url = input("Enter your long URL:")
+input_url = input("Enter your long URL: ")
 
 headers = {
     "accept": "application/json",
@@ -19,7 +19,7 @@ json_data = {
     "expires_at": "2024-11-28 12:00:00",
 }
 
-response = request.post('https://https://tinyurl.com/app/dev/create', params=params, headers=headers, json=json_data)
+response = request.post('https://api.tinyurl.com/create', params=params, headers=headers, json=json_data)
 
 # parsing
 response = (response.text)
