@@ -1,0 +1,13 @@
+Team Josh's Joltin Giants :: Ziying, Joshua
+SoftDev pd8
+K28 -- Getting more comfortable with the dev console and the DOM
+2023-04-17
+
+DISCOs:
+* Using arrow syntax, the left part denotes the input of a function and the right part the output of the function.
+* Why is instating an object useful?
+
+QCCs:
+* What is the difference between a "var" and a "cons" type?
+* Even when the red class is added to all <li> element, items 1 to items 6 are still blue. Why is that?
+* What is the preferred syntax for writing JS? 
