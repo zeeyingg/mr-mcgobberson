@@ -1,0 +1,17 @@
+Josh's Joltin' Giants
+SoftDev pd08
+K29 -- Getting more comfortable with the dev console and the DOM
+2023-04-03t
+
+DISCOs:
+* Using arrow syntax, the left part denotes the input of a function and the right part the output of the function.
+* Even when the red class is added to all <li> element, items 1 to items 6 are still blue.  No semicolons required in JS for it to run; standard convention dictates it's better to add them anyways
+* .value access the value of the element lambda(x) is the function used to define a procedure in Scheme
+* Add multiple event listeners to an element JS is run through the dev console
+* For input to be refreshed, the value of the input must be reassigned
+
+QCCs:
+* What is the difference between a "var" and a "cons" type? Can JS only be run in the dev console?
+* Why is instating an object useful? What are the first three lines of the file used for?
+* What is the preferred syntax for writing JS?  
+* Is the script tag meant to go at the end of the HTML file? Are suspectabilities to errors increased if it's not?
