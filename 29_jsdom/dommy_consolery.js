@@ -112,10 +112,20 @@ const myFxn = (param1, param2) => {
   return retVal;
 };
 
+var clicked = () => {
+  var number = document.getElementById('form1').value;
+  var fibButton = document.getElementById('fib');
+  fibButton.addEventListener('click', () => {var number = document.getElementById('form1').value;console.log(addItem("Fibbonaci calculation of " + number + " is " + fib(number)));})
+  var factButton = document.getElementById('fact');
+  factButton.addEventListener('click', () => {var number = document.getElementById('form1').value;console.log(addItem("Factorial calculation of " + number + " is " + fac(number)));})
+  var gcdButton = document.getElementById('gcd'); 
+  gcdButton.addEventListener('click', () => {var number = document.getElementById('form1').value;console.log(addItem("GCD calculation of " + number + " and 1000 is " + gcd(1000, number)));})
+}
 
-console.log(addItem("Fibbonaci calculation of 10 is " + fib(10)));
-console.log(addItem("Factorial calculation of 10 is " + fac(10)));
-console.log(addItem("GCD calculation of 60 and 48 is " + gcd(60, 48)));
+
+console.log(clicked())
+
+
 
 
 
