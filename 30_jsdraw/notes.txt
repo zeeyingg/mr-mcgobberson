@@ -1,0 +1,6 @@
+DISCO:
+* window.pageXOffset / window.pageYOffset returns the number of pixels that the document is currently scrolled horizontally / vertically
+* The position of the cursor is relative to its positon on the webpage
+
+QCC:
+* 
