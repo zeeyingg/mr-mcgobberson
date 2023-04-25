@@ -1,6 +1,12 @@
+Josh's Joltin' Giants
+SoftDev pd08
+K30 -- Getting more comfortable with the dev console and the DOM
+2023-04-24m
+
 DISCO:
 * window.pageXOffset / window.pageYOffset returns the number of pixels that the document is currently scrolled horizontally / vertically
 * The position of the cursor is relative to its positon on the webpage
 
 QCC:
-* 
+* Why do you need three "==="s for the if statement?
+* When do you create an anonymous function and when do you want to just pass an argument?
