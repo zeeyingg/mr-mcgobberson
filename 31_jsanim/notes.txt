@@ -1,0 +1,14 @@
+Jun Hong Wang, Joshua Liu
+SoftDev pd8
+K31 -- canvas based JS animation
+2023-04-25t
+
+DISCO: 
+* the placement of window.requestAnimationFrame and window.cancelAnimationFrame matters
+* requestID is the frame of the animation
+
+QCC:
+* why is the callback function in window.requestAnimationFrame drawDot? is this like a recursive function?
+* what does cancelAnimationFrame actually do? is the animation frame no longer associated with requestanimationframe? what exactly happens?
+* the reason why the canvas needs to be cleared first is so that when the circle shrinks, older circles aren't shown
+* does the number of circles on the canvas affect performance? if there are multiple circles in the same place, are they treated as multiple circles or as one circle?
