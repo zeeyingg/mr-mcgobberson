@@ -1,0 +1,15 @@
+Team Goober Gang :: Ziying, Joshua, Gabriel
+DISCO:
+    1. < var logo = new Image(); logo.src = "logo_dvd.jpg"; > Allows for loading and 
+    2. ctx.drawImage(logo, rectX, rectY, rectWidth, rectHeight); drawing the logo
+    3. windows.requestAnimationFrame "whatever" tells the browser to prepare the next animation frame
+    4. The code uses arrow functions to define the "clear" function and the "drawDot" function. Arrow functions are a shorthand for creating functions, 
+        and can be useful for reducing code verbosity, but they may be less clear to readers who are not familiar with the syntax.
+    5.The code defines some variables using "var" instead of "let" or "const". "Var" variables are function-scoped, which can make them more error-prone 
+        than block-scoped variables. Using "let" or "const" can help prevent bugs caused by variable redeclarations or incorrect scoping.
+    6. Can Define functions in function in js !
+QCC:
+    1. How does the "cancelAnimationFrame" function work? Why is it used in the "stopIt" function? 
+    2. When do we want to Define functions in function in js ! ? 
+    3. Are there any performance concerns with the animations? Could they slow down or become 
+        choppy on older or less powerful devices? How could this be optimized?
